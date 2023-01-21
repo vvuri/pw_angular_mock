@@ -66,3 +66,146 @@
 - 
 - PW example
     https://github.com/JoanEsquivel/playwright-python-test-framework
+
+### Angular app
+1.  Install
+```bash
+$ cd src
+$ npm install -g @angular/cli
+```
+for windows:
+```
+$ Get-ExecutionPolicy -List
+$ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+$ ng help
+```
+
+2. Create simple app
+```bash
+$ ng new angular-first
+```
+without routing, with SCSS
+```bash
+$ cd .\learn_angular\
+$ npm start
+```
+Browser: http://localhost:4200/
+
+3. CLI
+- ng generate component xyz
+- ng add @angular/material
+- ng add @angular/pwa
+- ng test
+- ng build --prod
+
+### TypeScript wiki
+
+1. Doc
+[https://www.typescriptlang.org/docs]
+
+2. Install
+```bash
+$ npm install -g typescript
+$ tsc --version
+  Version 3.9.7
+```
+
+3. Run
+```bash
+$ tsc
+$ tsc main.ts
+$ tsc --sourcemap main.js   // точки останова в TS
+```
+
+4. Configure
+Конфигурационный файл: tsconfig.json
+
+5. Types
+*имя: тип*
+```js
+var str: string;
+let num: nubber;
+let big: bigint = 100n;
+let isWork: boolean = false;
+
+let list: number[] = [1, 2, 3];
+let list: Array<number> = [1, 2, 3];
+
+let x: [string, number];
+```
+
+```js
+let notSure: unknown = 4;
+notSure = "maybe a string instead";
+```
+
+```js
+enum Color { Red, Green, Blue, }
+let c: Color = Color.Green;
+```
+
+```js
+const chnging: any;
+
+let unusable: void = undefined;
+
+let n: null = null;
+```
+
+- В функциях - необязательный параметр *имя?: тип*
+- Never
+- Object
+
+6. Interface
+```js
+interface User {
+  name: string;
+  id: number;
+  dop?: any;
+}
+
+const user: User = {
+  name: "Hayes",
+  id: 0,
+};
+```
+
+7. Function
+```js
+```
+
+8. Class
+```js
+```
+
+
+9. Decorators
+@expression
+Декораторы представляют функции, которые могут применяться к классам, методам, геттерам и сеттерам, свойствам, параметрам.
+Декоратор — это выражение, предваренное символом "@", которое возвращает функцию определенного вида.
+```js
+function MyDecorator(target, propertyKey, descriptor) {
+    // ...
+}
+class MyClass {
+    @MyDecorator
+    myMethod() {
+    }
+}
+```
+@Component({
+  // имя идентификации компонента в DOM
+  // свойство шаблона
+  // стилевое оформление компонента
+})
+class HelloWorldComponent({
+  // код реализующий логику компонента
+})
+
+[Habr | https://habr.com/ru/company/docsvision/blog/310870/]
+
+10. Generic
+```js
+```
+
+
