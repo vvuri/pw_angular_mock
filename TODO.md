@@ -82,11 +82,11 @@ $ ng help
 
 2. Create simple app
 ```bash
-$ ng new angular-first
+$ ng new angular-app
 ```
-without routing, with SCSS
+without routing, with CSS
 ```bash
-$ cd .\learn_angular\
+$ cd .\angular-app\
 $ npm start
 ```
 Browser: http://localhost:4200/
